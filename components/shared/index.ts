@@ -1,8 +1,11 @@
 export { Container } from './Container';
+export { CheckboxFiltersGroup } from './CheckboxFiltersGroup';
 export { SortPopup } from './SortPopup';
 export { Categories } from './Categories';
 export { Header } from './Header';
 export { Title } from './Title';
-export {TopBar} from './TopBar';
-export {Filters} from './Filters';
-export {FilterCheckbox} from './FilterCheckbox';
+export { TopBar } from './TopBar';
+export { Filters } from './Filters';
+export { FilterCheckbox } from './FilterCheckbox';
+export { RangeSlider } from './RangeSlider';
+export {ProductCard} from './ProductCard';
