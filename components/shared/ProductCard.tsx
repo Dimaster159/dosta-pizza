@@ -1,7 +1,6 @@
 import React from 'react';
 import { cn } from './../../lib/utils';
 import Link from 'next/link';
-import Image from 'next/image'
 import { Title } from './Title';
 import { Button } from '../ui';
 import { Plus } from 'lucide-react';
@@ -30,7 +29,7 @@ export const ProductCard: React.FC<Props> = ({ id, name, price, imageUrl, classN
                         от <b>{price} ₽</b>
                     </span>
                     <Button variant="secondary" className='text-base font-bold'>
-                        <Plus size={20} className='mr-1'/>
+                        <Plus size={20} className='mr-1' />
                         Добавить
                     </Button>
                 </div>

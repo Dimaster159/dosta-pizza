@@ -10,7 +10,7 @@ export default function Home() {
       </Container>
       <TopBar />
 
-      <Container className="mt-9 pb-14">
+      <Container className="mt-9 pb-14 scroll-smooth">
         <div className="flex gap-[80px]">
           <div className="w-[250px]">
             <Filters />
@@ -54,7 +54,7 @@ export default function Home() {
                 price: 629,
                 items: [{ price: 629 }],
               },]} categoryId={1} />
-              <ProductsListGroup title="Завтрак" items={[{
+              <ProductsListGroup title="Комбо" items={[{
                 id: 1,
                 name: "Охотничья",
                 imageUrl: 'https://media.dodostatic.net/image/r:233x233/0196a9ad810f70ea93151a8281a68058.avif',
