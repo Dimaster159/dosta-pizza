@@ -2,24 +2,8 @@
   "name": "dosta-pizza",
   "version": "0.1.0",
   "private": true,
-  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
-  "homepage": "https://github.com/Dimaster159/dosta-pizza#readme",
-  "bugs": {
-    "url": "https://github.com/Dimaster159/dosta-pizza/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dimaster159/dosta-pizza.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -31,36 +15,40 @@
     "prisma:preview": "prisma db pull",
     "prisma:seed": "prisma db seed"
   },
-  "dependencies": {
-    "@prisma/client": "^5.11.0",
-    "@radix-ui/react-checkbox": "^1.0.4",
-    "@radix-ui/react-dialog": "^1.0.5",
-    "@radix-ui/react-popover": "^1.0.7",
-    "@radix-ui/react-slot": "^1.0.2",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.0",
-    "lucide-react": "^0.363.0",
-    "next": "14.1.4",
-    "prisma": "^5.11.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-use": "^17.5.0",
-    "tailwind-merge": "^2.2.2",
-    "tailwindcss-animate": "^1.0.7",
-    "ts-node": "^10.9.2"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
-  },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.9.0",
+    "@prisma/extension-accelerate": "^2.0.1",
+    "@radix-ui/react-checkbox": "^1.3.2",
+    "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-popover": "^1.1.14",
+    "@radix-ui/react-select": "^2.2.5",
+    "@radix-ui/react-slider": "^1.3.5",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.513.0",
+    "next": "15.3.3",
+    "prisma": "^6.9.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-use": "^17.6.0",
+    "tailwind-merge": "^3.3.0",
+    "zustand": "^5.0.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "rollup": "^4.43.0",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.3.4",
+    "typescript": "^5"
   }
 }
